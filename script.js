@@ -66,7 +66,7 @@ if (contactForm) {
         const subject = encodeURIComponent('Contact from Website - ' + name);
         const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message);
         
-        window.location.href = 'mailto:raja.abbassi@example.com?subject=' + subject + '&body=' + body;
+        window.location.href = 'mailto:abbassirajakawyer@gmail.com?subject=' + subject + '&body=' + body;
         
         alert(currentLang === 'ar' ? 'شكراً لتواصلكم! سيتم فتح برنامج البريد الإلكتروني.' : 
               currentLang === 'en' ? 'Thank you! Your email client will open.' : 
