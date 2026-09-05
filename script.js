@@ -74,4 +74,6 @@ window.addEventListener('scroll', function() {
 const savedLang = localStorage.getItem('preferred-lang');
 if (savedLang) {
     changeLang(savedLang);
+} else {
+    changeLang('ar');
 }

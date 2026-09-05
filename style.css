@@ -43,11 +43,15 @@ body[dir="rtl"] {
 /* Language Selector */
 .lang-selector {
     position: fixed;
-    top: 20px;
+    bottom: 20px;
     right: 20px;
     z-index: 1001;
     display: flex;
     gap: 5px;
+    background: var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .lang-btn {
@@ -551,6 +555,11 @@ body[dir="rtl"] {
     text-align: right;
 }
 
+[dir="rtl"] .lang-selector {
+    right: auto;
+    left: 20px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -630,8 +639,13 @@ body[dir="rtl"] {
     }
 
     .lang-selector {
-        top: 70px;
+        bottom: 10px;
         right: 10px;
+    }
+
+    [dir="rtl"] .lang-selector {
+        right: auto;
+        left: 10px;
     }
 
     .lang-btn {
