@@ -1,4 +1,4 @@
-let currentLang = 'ar';
+let currentLang = 'fr';
 
 function changeLang(lang) {
     currentLang = lang;
@@ -25,9 +25,9 @@ function changeLang(lang) {
 
     localStorage.setItem('preferred-lang', lang);
     
-    document.title = lang === 'ar' ? 'المحامية رجاء عباسي - تونس' : 
+    document.title = lang === 'fr' ? 'Me Raja Abbassi - Avocate Tunisie' : 
                      lang === 'en' ? 'Me Raja Abbassi - Lawyer Tunisia' : 
-                     'Me Raja Abbassi - Avocate Tunisie';
+                     'المحامية رجاء عباسي - تونس';
 }
 
 function toggleMenu() {
@@ -90,5 +90,5 @@ const savedLang = localStorage.getItem('preferred-lang');
 if (savedLang) {
     changeLang(savedLang);
 } else {
-    changeLang('ar');
+    changeLang('fr');
 }
