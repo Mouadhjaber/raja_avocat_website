@@ -489,6 +489,22 @@ body[dir="rtl"] {
     color: var(--gray-dark);
 }
 
+.whatsapp-contact i {
+    color: #25D366;
+}
+
+.whatsapp-link {
+    color: #25D366;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    color: #128C7E;
+    text-decoration: underline;
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
