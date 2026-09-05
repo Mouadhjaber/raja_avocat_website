@@ -43,13 +43,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Language Selector -->
-    <div class="lang-selector">
-        <button onclick="changeLang('fr')" class="lang-btn active" id="btn-fr">FR</button>
-        <button onclick="changeLang('en')" class="lang-btn" id="btn-en">EN</button>
-        <button onclick="changeLang('ar')" class="lang-btn" id="btn-ar">AR</button>
-    </div>
-
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-brand">Raja Abbassi</div>
@@ -60,10 +53,17 @@
             <a href="#experience" data-fr="Expérience" data-en="Experience" data-ar="الخبرة">الخبرة</a>
             <a href="#contact" data-fr="Contact" data-en="Contact" data-ar="التواصل">التواصل</a>
         </div>
-        <div class="hamburger" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
+        <div class="nav-right">
+            <div class="lang-selector">
+                <button onclick="changeLang('fr')" class="lang-btn" id="btn-fr">FR</button>
+                <button onclick="changeLang('en')" class="lang-btn" id="btn-en">EN</button>
+                <button onclick="changeLang('ar')" class="lang-btn active" id="btn-ar">AR</button>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 

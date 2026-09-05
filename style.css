@@ -42,20 +42,12 @@ body[dir="rtl"] {
 
 /* Language Selector */
 .lang-selector {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1001;
     display: flex;
     gap: 5px;
-    background: var(--white);
-    padding: 8px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
 .lang-btn {
-    padding: 8px 16px;
+    padding: 6px 12px;
     border: 2px solid var(--gold);
     background: transparent;
     color: var(--gold);
@@ -63,6 +55,7 @@ body[dir="rtl"] {
     font-weight: 600;
     transition: all 0.3s ease;
     border-radius: 4px;
+    font-size: 0.85rem;
 }
 
 .lang-btn:hover,
@@ -124,6 +117,12 @@ body[dir="rtl"] {
 
 .nav-links a:hover::after {
     width: 100%;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .hamburger {
@@ -582,11 +581,6 @@ body[dir="rtl"] {
     text-align: right;
 }
 
-[dir="rtl"] .lang-selector {
-    right: auto;
-    left: 20px;
-}
-
 /* Responsive */
 @media (max-width: 768px) {
     .navbar {
@@ -608,6 +602,10 @@ body[dir="rtl"] {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .nav-right {
+        gap: 10px;
     }
 
     .hamburger {
@@ -665,18 +663,8 @@ body[dir="rtl"] {
         grid-template-columns: 1fr;
     }
 
-    .lang-selector {
-        bottom: 10px;
-        right: 10px;
-    }
-
-    [dir="rtl"] .lang-selector {
-        right: auto;
-        left: 10px;
-    }
-
     .lang-btn {
-        padding: 6px 12px;
-        font-size: 0.85rem;
+        padding: 5px 10px;
+        font-size: 0.8rem;
     }
 }
