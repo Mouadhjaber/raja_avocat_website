@@ -149,6 +149,17 @@ body[dir="rtl"] {
     padding: 100px 50px;
 }
 
+.hero-icon {
+    margin-bottom: 20px;
+}
+
+.scale-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(197, 165, 90, 0.3));
+}
+
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
