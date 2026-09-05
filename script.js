@@ -1,4 +1,4 @@
-let currentLang = 'fr';
+let currentLang = 'ar';
 
 function changeLang(lang) {
     currentLang = lang;
@@ -24,6 +24,10 @@ function changeLang(lang) {
     document.getElementById('btn-' + lang).classList.add('active');
 
     localStorage.setItem('preferred-lang', lang);
+    
+    document.title = lang === 'ar' ? 'المحامية رجاء عباسي - تونس' : 
+                     lang === 'en' ? 'Me Raja Abbassi - Lawyer Tunisia' : 
+                     'Me Raja Abbassi - Avocate Tunisie';
 }
 
 function toggleMenu() {
