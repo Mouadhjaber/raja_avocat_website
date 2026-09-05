@@ -614,6 +614,7 @@ body[dir="rtl"] {
 
     .hero {
         padding: 100px 20px;
+        min-height: auto;
     }
 
     .hero-content {
@@ -625,14 +626,26 @@ body[dir="rtl"] {
         font-size: 2.5rem;
     }
 
+    .hero-desc {
+        font-size: 1rem;
+    }
+
     .hero-buttons {
         justify-content: center;
         flex-wrap: wrap;
     }
 
     .hero-image img {
-        width: 280px;
-        height: 280px;
+        width: 250px;
+        height: 250px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .about {
+        padding: 60px 0;
     }
 
     .about-stats {
@@ -640,8 +653,24 @@ body[dir="rtl"] {
         gap: 30px;
     }
 
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .services {
+        padding: 60px 0;
+    }
+
     .services-grid {
         grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 30px 20px;
+    }
+
+    .experience {
+        padding: 60px 0;
     }
 
     .timeline::before {
@@ -659,12 +688,41 @@ body[dir="rtl"] {
         text-align: left;
     }
 
+    .contact {
+        padding: 60px 0;
+    }
+
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 40px;
     }
 
     .lang-btn {
         padding: 5px 10px;
         font-size: 0.8rem;
+    }
+
+    .btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .stat-number {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
     }
 }

@@ -49,13 +49,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-const contactForm = document.querySelector('.contact-form form');
+const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert(currentLang === 'ar' ? 'شكراً لتواصلكم! سنرد عليكم قريباً.' : 
-              currentLang === 'en' ? 'Thank you for contacting us! We will respond soon.' : 
-              'Merci de nous avoir contactés! Nous vous répondrons bientôt.');
+        
+        const name = this.name.value;
+        const email = this.email.value;
+        const phone = this.phone.value;
+        const message = this.message.value;
+        
+        const subject = encodeURIComponent('Contact from Website - ' + name);
+        const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\nPhone: ' + phone + '\n\nMessage:\n' + message);
+        
+        window.location.href = 'mailto:raja.abbassi@example.com?subject=' + subject + '&body=' + body;
+        
+        alert(currentLang === 'ar' ? 'شكراً لتواصلكم! سيتم فتح برنامج البريد الإلكتروني.' : 
+              currentLang === 'en' ? 'Thank you! Your email client will open.' : 
+              'Merci! Votre client email va s\'ouvrir.');
         this.reset();
     });
 }
